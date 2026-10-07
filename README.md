@@ -1,6 +1,6 @@
-# Khepri agency
+# Khepri Studios
 
-The company freelance site for knowing a little more about us and what we do
+Our company website. What we do, What we build.
 
 ## Built with
 
@@ -12,9 +12,9 @@ The company freelance site for knowing a little more about us and what we do
 
 ## Design philosophy
 
-A touch of modern minimalism with lots of white/black, mashed together with skeuomorphic design giving a touch of depth rather than boring flat design we've known for years.
+A modern minimalism site with lots of white & black, mashed together with skeuomorphic design giving a touch of depth rather than boring flat design we've known for years.
 
-### Install
+## Install
 
 `bun install`
 
