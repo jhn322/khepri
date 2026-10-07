@@ -31,7 +31,7 @@ const QUOTES = [
 
 export function Testimonials() {
   return (
-    <section id="testimonials" className="mx-auto max-w-350 px-4 pb-16 sm:px-6">
+    <section className="mx-auto max-w-350 px-4 pb-16 sm:px-6">
       <div className="grid gap-6 lg:grid-cols-[1fr_1fr]">
         <div>
           <SectionLabel section="testimonials" />

@@ -10,7 +10,7 @@ export function Footer() {
       <div className="mx-auto max-w-350 rounded-3xl bg-ink p-6 text-ink-foreground skeuo-card sm:p-10 lg:p-14">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
           <p className="text-[20vw] leading-[0.85] font-medium tracking-[-0.06em] sm:text-[14vw] lg:text-[10rem]">
-            Khepri<sup className="align-super text-[0.3em]">®</sup>
+            Khepri<sup className="align-super text-[0.4em]">®</sup>
           </p>
           <p className="text-2xl sm:text-4xl">© 20 - {year}°</p>
         </div>

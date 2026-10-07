@@ -24,7 +24,7 @@ const PROJECTS = [
 
 export function Projects() {
   return (
-    <section id="projects" className="mt-3 space-y-3 px-3 sm:px-4">
+    <section className="mt-3 space-y-3 px-3 sm:px-4">
       {PROJECTS.map((p) => (
         <article
           key={p.title}

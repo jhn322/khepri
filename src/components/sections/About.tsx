@@ -11,16 +11,31 @@ export function About() {
       <div className="grid gap-8 lg:grid-cols-[1fr_2fr]">
         <SectionLabel section="about" />
         <h2 className="text-2xl leading-tight font-medium tracking-tight sm:text-4xl">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt dignissim elit
-          quis sodales. Nullam lectus ipsum, tempor ut mi vel, venenatis bibendum lorem -{" "}
+          We believe the most memorable projects are not built through convenience, but{" "}
+          <span className="text-muted-foreground">/</span>through intentionality,{" "}
           <span className="text-muted-foreground">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt dignissim elit
-            quis sodales. Nullam lectus ipsum, tempor ut mi vel, venenatis bibendum lorem.
+            quietly captures attention, and leaves a lasting impression long after completion.
           </span>
         </h2>
       </div>
 
       <DragScroll className="mt-14 gap-4 px-1 py-2">
+        <div className={cn(card, "p-0")}>
+          <img
+            src="/about/services.jpg"
+            alt=""
+            draggable={false}
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+          <div className="glass-dark absolute inset-3 flex flex-col justify-between rounded-2xl p-4 text-on-image">
+            <p className="text-xs">Services running</p>
+            <div id="services">
+              <p className="text-5xl font-medium tracking-tight">80+</p>
+              <p className="text-sm opacity-80">Critical services maintained, and optimized.</p>
+            </div>
+          </div>
+        </div>
+
         <div className={cn(card, "flex flex-col justify-between bg-card")}>
           <div className="grid grid-cols-4 gap-1.5">
             {Array.from({ length: 8 }).map((_, i) => (
@@ -36,7 +51,7 @@ export function About() {
           <div>
             <p className="text-xs text-muted-foreground">Happy clients</p>
             <p className="text-5xl font-medium tracking-tight">
-              48<sup className="text-xl">+</sup>
+              8<sup className="text-xl">+</sup>
             </p>
           </div>
         </div>
@@ -44,30 +59,36 @@ export function About() {
         <div className={cn(card, "flex flex-col justify-between bg-ink text-ink-foreground")}>
           <div className="flex items-start justify-between">
             <div>
-              <p className="text-xs text-ink-muted">Years in ops</p>
+              <p className="text-xs text-ink-muted">Years of experience</p>
               <p className="text-5xl font-medium tracking-tight">
                 12<sup className="text-xl">+</sup>
               </p>
             </div>
             <img
-              src={ph(120, 120, "Logo")}
+              src="/about/logo.png"
               alt=""
               draggable={false}
-              className="h-16 w-16 rounded-full"
+              className="h-16 w-16 rounded-full dark:hidden"
+            />
+            <img
+              src="/about/logo-black.png"
+              alt=""
+              draggable={false}
+              className="hidden h-16 w-16 rounded-full dark:block"
             />
           </div>
           <p className="text-sm text-ink-muted">
-            Linux, cloud and on-prem infrastructure kept steady since day one.
+            Broad expertise across Linux, design, and development, grounded in hands-on experience.
           </p>
         </div>
 
         <div className={cn(card, "flex flex-col justify-between bg-card")}>
           <p className="text-sm text-muted-foreground">
-            Every deployment shipped with monitoring, backups and docs.
+            Every application shipped with monitoring, backups and documentation.
           </p>
           <div className="flex items-end gap-4">
             <img
-              src={ph(200, 260, "Photo")}
+              src="/about/projects.webp"
               alt=""
               draggable={false}
               className="h-28 w-20 rounded-2xl object-cover"
@@ -75,7 +96,7 @@ export function About() {
             <div>
               <p className="text-xs text-muted-foreground">Projects delivered</p>
               <p className="text-5xl font-medium tracking-tight">
-                150<sup className="text-xl">+</sup>
+                10<sup className="text-xl">+</sup>
               </p>
             </div>
           </div>
@@ -83,18 +104,18 @@ export function About() {
 
         <div className={cn(card, "p-0")}>
           <img
-            src={ph(600, 600, "Image")}
+            src="/about/uptime.webp"
             alt=""
             draggable={false}
             className="absolute inset-0 h-full w-full object-cover"
           />
           <div className="glass-dark absolute inset-3 flex flex-col justify-between rounded-2xl p-4 text-on-image">
             <p className="text-xs">Uptime kept</p>
-            <div>
+            <div id="services">
               <p className="text-5xl font-medium tracking-tight">
                 99.9<sup className="text-xl">%</sup>
               </p>
-              <p className="text-sm opacity-80">Across every system we manage.</p>
+              <p className="text-sm opacity-80">Across every application we manage.</p>
             </div>
           </div>
         </div>

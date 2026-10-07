@@ -43,7 +43,7 @@ export function Process() {
               className="aspect-4/5 w-full rounded-3xl object-cover skeuo-card"
             />
             <p className="text-center text-sm text-muted-foreground">0{i + 1}</p>
-            <div className="flex-1 rounded-3xl bg-card p-6 skeuo-card">
+            <div id="testimonials" className="flex-1 rounded-3xl bg-card p-6 skeuo-card">
               <h3 className="text-xl font-medium tracking-tight">{s.title}</h3>
               <p className="mt-3 text-sm text-muted-foreground">{s.desc}</p>
             </div>

@@ -4,10 +4,10 @@ import { cn } from "@/lib/utils";
 type Section = "about" | "services" | "projects" | "process" | "testimonials" | "getInTouch";
 
 const SECTIONS: Record<Section, { number: string; name: string }> = {
-  about: { number: "01", name: "ABOUT" },
-  services: { number: "02", name: "SERVICES" },
+  about: { number: "01", name: "ABOUT US" },
+  services: { number: "02", name: "OUR SERVICES" },
   projects: { number: "03", name: "SELECTED PROJECTS" },
-  process: { number: "04", name: "PROCESS" },
+  process: { number: "04", name: "OUR PROCESS" },
   testimonials: { number: "05", name: "TESTIMONIALS" },
   getInTouch: { number: "06", name: "GET IN TOUCH" },
 };

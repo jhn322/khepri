@@ -28,7 +28,7 @@ const SERVICES = [
 
 export function Services() {
   return (
-    <section id="services" className="px-3 sm:px-4">
+    <section className="px-3 sm:px-4">
       <div className="mx-auto max-w-350 rounded-3xl bg-ink p-5 text-ink-foreground skeuo-card sm:p-10 lg:p-14">
         <div className="grid gap-6 lg:grid-cols-[1fr_minmax(0,380px)]">
           <div>
@@ -102,7 +102,7 @@ export function Services() {
             </Accordion.Item>
           ))}
         </Accordion.Root>
-        <div className="border-t border-ink-border pt-8">
+        <div id="projects" className="border-t border-ink-border pt-8">
           <GetInTouch label="Let's talk" />
         </div>
       </div>
