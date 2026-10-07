@@ -22,7 +22,7 @@ export function About() {
       <DragScroll className="mt-14 gap-4 px-1 py-2">
         <div className={cn(card, "p-0")}>
           <img
-            src="/about/services.jpg"
+            src="/about/services.webp"
             alt=""
             draggable={false}
             className="absolute inset-0 h-full w-full object-cover"
