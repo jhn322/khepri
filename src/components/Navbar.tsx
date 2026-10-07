@@ -1,14 +1,7 @@
 import { useEffect, useState, Fragment } from "react";
 import { cn } from "@/lib/utils";
-import { GetInTouch } from "@/components/lumora/GetInTouch";
-
-export const NAV = [
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Projects", href: "#projects" },
-  { label: "Process", href: "#process" },
-  { label: "Testimonials", href: "#testimonials" },
-];
+import { GetInTouch } from "@/components/sections/GetInTouch";
+import { NAV } from "./navItems";
 
 function ThemeSwitch() {
   const [dark, setDark] = useState(false);
@@ -78,7 +71,7 @@ export function Navbar() {
       >
         <div className="mx-auto grid h-16 max-w-350 grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-4 sm:px-6 md:flex md:justify-between">
           <a href="#top" className="truncate text-lg font-medium tracking-tight">
-            JS Design<sup className="text-[10px]">®</sup>
+            Khepri<sup className="text-[10px]">®</sup>
           </a>
           <nav className="hidden items-center gap-7 md:flex">
             {NAV.map((n, i) => (
